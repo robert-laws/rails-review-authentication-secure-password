@@ -1,0 +1,21 @@
+<%= form_for :user, url: '/users' do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %><br>
+  
+  <%= f.label :role %>
+  <%= f.text_field :role %><br>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %><br>
+
+  <%= f.label 'password' %>
+  <%= f.password_field :password %><br>
+
+  <%= f.label 'confirm your password'%>
+  <%= f.password_field :password_confirmation %><br>
+
+  <%= f.submit %>
+<% end %>
